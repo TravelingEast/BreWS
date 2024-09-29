@@ -3,6 +3,9 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import config  # Importing credentials from config.py
+# Fetch your secrets securely from Streamlit's secrets manager
+username = st.secrets["USERNAME"]
+password = st.secrets["PASSWORD"]
 
 # Mapping Weather Symbol IDs to Descriptions and Icons (using emojis as placeholders)
 weather_symbol_map = {
